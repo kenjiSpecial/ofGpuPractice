@@ -1,0 +1,170 @@
+#########################
+# openFrameworks patterns
+#########################
+
+# build files
+openFrameworks.a
+openFrameworksDebug.a
+openFrameworksUniversal.a
+libs/openFrameworksCompiled/lib/*/*
+!libs/openFrameworksCompiled/lib/*/.gitkeep
+
+# apothecary
+scripts/apothecary/build
+
+# rule to avoid non-official addons going into git
+# see addons/.gitignore
+addons/*
+
+# rule to avoid non-official apps going into git
+# see apps/.gitignore
+apps/*
+
+# also, see examples/.gitignore
+
+#########################
+# general
+#########################
+
+[Bb]uild/
+[Oo]bj/
+*.o
+[Dd]ebug*/
+[Rr]elease*/
+*.mode*
+*.app/
+*.pyc
+.svn/
+*.log
+*.cpp.eep
+*.cpp.elf
+*.cpp.hex
+
+#########################
+# IDE
+#########################
+
+# XCode
+*.pbxuser
+*.perspective
+*.perspectivev3
+*.mode1v3
+*.mode2v3
+# XCode 4
+xcuserdata
+*.xcworkspace
+
+# Code::Blocks
+*.depend
+*.layout
+
+# Visual Studio
+*.sdf
+*.opensdf
+*.suo
+*.pdb
+*.ilk
+*.aps
+ipch/
+
+# Eclipse
+.metadata
+local.properties
+.externalToolBuilders
+
+#########################
+# operating system
+#########################
+
+# Linux
+*~
+# KDE
+.directory
+.AppleDouble
+
+# OSX
+.DS_Store
+*.swp
+*~.nib
+# Thumbnails
+._*
+
+# Windows
+# Windows image file caches
+Thumbs.db
+# Folder config file
+Desktop.ini
+
+# Android
+.csettings
+/libs/openFrameworksCompiled/project/android/paths.make
+
+#########################
+# miscellaneous
+#########################
+
+.mailmap
+
+#########################
+# core examples
+#########################
+
+*/*/bin/*
+!*/*/bin/data/
+
+#########################
+# IDE
+#########################
+
+# XCode
+/*/*/*.xcodeproj
+/*/*/Project.xcconfig
+/*/*/openFrameworks-Info.plist
+/*/*/ofxiOS-Info.plist
+/*/*/ofxiOS_Prefix.pch
+/*/*/*/*/Default*.png
+/*/*/*/*/Icon*.png
+*.xcscheme
+*.pbxproj
+
+# Code::Blocks
+/*/*/*.cbp
+/*/*/*.workspace
+
+# Visual Studio
+/*/*/*.sln
+/*/*/*.vcxproj
+/*/*/*.vcxproj.user
+/*/*/*.vcxproj.filters
+/*/*/icon.rc
+
+# Eclipse
+/*/*/.cproject
+/*/*/.project
+/*/*/.settings/
+
+#########################
+# operating system
+#########################
+
+# Linux
+/*/*/Makefile
+/*/*/config.make
+# Leave Android files in until project generation works
+!/android/*/Makefile
+!/android/*/config.make
+
+# Android
+android/*/test link
+android/*/gen
+android/*/res/raw
+libOFAndroidApp*.so
+gdbserver
+gdb.setup
+libneondetection.so
+Application.mk
+Android.mk
+
+!/android/*/.cproject
+!/android/*/.project
+!/android/*/.settings
